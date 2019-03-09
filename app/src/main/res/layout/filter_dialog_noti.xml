@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="35dp"
+    android:background="@drawable/curve_example"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:paddingRight="10dp"
+        android:drawableRight="@mipmap/calendar"
+        android:textSize="12sp"
+        android:hint="DATE  FROM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:paddingRight="10dp"
+        android:drawableRight="@mipmap/calendar"
+        android:hint="DATE TO"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_below="@+id/info_card"
+            android:id="@+id/cancle_dialog_ms"
+            android:textColor="#fff"
+            android:text="CANCLE"
+            android:background="@drawable/curver_btn_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <Button
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_below="@+id/info_card"
+            android:id="@+id/apply_dialog_ms"
+            android:textColor="#fff"
+            android:text="APPLY"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/curver_btn_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

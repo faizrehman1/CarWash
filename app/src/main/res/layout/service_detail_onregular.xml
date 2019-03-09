@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar_outside"
+        layout="@layout/toolbar" />
+    <View
+        android:visibility="gone"
+        android:id="@+id/payment_back_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7fc9c8c8"
+
+        ></View>
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_outside"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    app:cardElevation="8dp"
+
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/payment_cardone_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#7fc9c8c8"
+
+                        ></View>
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#000"
+                            android:text="Service Details"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textColor="#000"
+                                    android:textSize="12sp"
+                                    android:text="Name:"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="12sp"
+                                    android:text="Toney Lee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Mobile:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="06184123"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Address:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="Main Road "
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Vehicle Type:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="Small Car"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Vehicle Make:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="Honda City"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="3-March-2017:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Vehicle Reg No:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="KA01 MM486"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Washing:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="₹250"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Interior Dialing:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="₹150"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Tax:"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:textSize="12sp"
+                                        android:text="₹80"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <LinearLayout
+                                        android:layout_marginTop="5dp"
+                                        android:weightSum="2"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:textSize="12sp"
+                                            android:textColor="#000"
+                                            android:text="Total:"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:textSize="12sp"
+
+                                            android:hint="₹100"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000"
+                                        android:textSize="12sp"
+                                        android:text="Status*"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+
+                                    <Spinner
+                                        android:hint="MOBILE"
+                                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:orientation="vertical"-->
+
+
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/payment_download"-->
+                        <!--android:src="@mipmap/download"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<ImageView-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/payment_share"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:src="@mipmap/share"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+
+
+
+                    <!--<ImageButton-->
+                        <!--android:id="@+id/payment_list_fab"-->
+                        <!--android:background="@mipmap/sort_btn"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+
+
+
+                <!--</LinearLayout>-->
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/done_regular_service"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp">
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/floatingMenuItem2"-->
+            <!--android:visibility="gone"-->
+            <!--android:background="@mipmap/custlist_filter"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"  />-->
+
+
+        <!--<ImageView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/floatingMenuItem1"-->
+            <!--android:background="@mipmap/custlist_add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <ImageButton
+            android:id="@+id/edit_detail_regular"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/edit_btn"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/done_regular_service"
+        android:textColor="#fff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="DONE"
+        android:background="@drawable/curver_btn_orange"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+
+</RelativeLayout>

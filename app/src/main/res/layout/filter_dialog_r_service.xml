@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curve_example"
+    android:orientation="vertical"
+    android:paddingRight="35dp"
+    android:paddingLeft="35dp"
+    android:paddingBottom="35dp"
+    android:paddingTop="20dp"
+    >
+
+    <EditText
+        android:id="@+id/datefrom_r_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/calendar"
+        android:hint="DATE  FROM"
+        android:paddingRight="15dp"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/dateto_r_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/calendar"
+        android:hint="DATE TO"
+        android:paddingRight="15dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Apartmrnt*"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/appart_r_service"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Block*"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/bloc_r_service"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Supervisor*"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/supervisor_r_service"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Boy*"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/boy_r_service"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Service Status*"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/service_status_r_service"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Service Type*"
+        android:textColor="#000" />
+
+    <Spinner
+        android:id="@+id/service_type_r_service"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancle_dialog_r_service"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/info_card"
+            android:background="@drawable/curver_btn_orange"
+            android:text="CANCLE"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/apply_dialog_r_service"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/info_card"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/curver_btn_blue"
+            android:text="APPLY"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

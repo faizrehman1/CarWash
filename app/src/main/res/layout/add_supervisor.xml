@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <include
+        android:id="@+id/toolbar_outside"
+        layout="@layout/toolbar" />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_outside"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/supervisor_name"
+            android:textSize="12sp"
+            android:hint="NAME"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/supervisor_mobile"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:inputType="number"
+            android:hint="MOBILE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            android:id="@+id/supervisor_email"
+            android:hint="EMAIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="text"
+            android:textSize="12sp"
+            android:hint="ADDRESS"
+            android:id="@+id/supervisor_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+
+            android:textSize="12sp"
+            android:text="Apartments (Optional)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:id="@+id/supervisor_app"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+
+            android:textSize="12sp"
+            android:text="Blocks (Optional)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:id="@+id/supervisor_block"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/add_block"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/add_blocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="ADD BLOCKS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/super_boy"
+                android:buttonTint="#039be5"
+                android:text="Boy (Default)"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:textSize="12sp"
+                android:id="@+id/super_cheif"
+                android:buttonTint="#039be5"
+                android:text="Chief Supervisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:textSize="12sp"
+                android:id="@+id/super_visor"
+                android:buttonTint="#039be5"
+                android:text="Supervisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/add_supervisor_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="#fff"
+        android:text="Save"
+        android:background="@drawable/curver_btn_orange"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

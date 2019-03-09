@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:inputType="number"
+                android:textSize="12sp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/apartment_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:textSize="12sp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+                android:id="@+id/service_vehicle_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#000"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textSize="12sp" />
+
+            <Spinner
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:textSize="12sp"
+                android:id="@+id/apartment_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_below="@+id/info_card"
+            android:id="@+id/cancle_dialog_ms"
+            android:textColor="#fff"
+            android:text="CANCLE"
+            android:background="@drawable/curver_btn_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <Button
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_below="@+id/info_card"
+            android:id="@+id/add_dialog_ms"
+            android:textColor="#fff"
+            android:text="Add Service"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/curver_btn_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

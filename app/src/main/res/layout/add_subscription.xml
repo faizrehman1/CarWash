@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar_outside"
+            layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_outside"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                app:cardElevation="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:text="Vehicle Type*"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <Spinner
+                        android:id="@+id/vehicle_type_spinner"
+                        android:layout_marginTop="1dp"
+                        android:hint="MOBILE"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/vehicle_make"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:hint="VEHICLE MAKE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/vehicle_reg_no"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:hint="REGISTRATION NO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/subs_start_date"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="20dp"
+                        android:drawableRight="@mipmap/calendar"
+                        android:layout_marginTop="5dp"
+                        android:hint="SUBSCRIPTION START DATE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/hold_subscription"
+                            android:text="HOLD SUBSCRIPTION"
+                            android:buttonTint="#039be5"
+                            android:textColor="#9c000000"
+                            android:layout_marginTop="3dp"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_marginTop="3dp"
+                            android:background="#9c000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"/>
+
+                        <RadioButton
+                            android:id="@+id/resume_subscription"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:buttonTint="#039be5"
+                            android:text="RESUME SUBSCRIPTION"
+                            android:textColor="#9c000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:background="#9c000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"/>
+                        <RadioButton
+                            android:id="@+id/default_subscription"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:text="NONE (DEFAULT)"
+                            android:buttonTint="#039be5"
+                            android:textColor="#9c000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_marginTop="5dp"
+                            android:background="#9c000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"/>
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/subs_end_date"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:drawableRight="@mipmap/calendar"
+                        android:layout_marginTop="5dp"
+                        android:hint="SUBSCRIPTION END DATE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/add_subscription_btn"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:text="SAVE"
+                android:background="@drawable/curver_btn_orange"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

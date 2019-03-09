@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/clist_back_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c9c8c8"
+
+        ></View>
+    <include
+        android:id="@+id/toolbar_outside"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/list_search"
+        android:layout_below="@id/toolbar_outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/message_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Message"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="#039be5"
+            android:background="@drawable/button_rounded_corners_right"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Notification"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="@drawable/button_rounded_corners_right_selected"/>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_below="@+id/list_search"
+        android:id="@+id/customer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+    <LinearLayout
+            android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+            android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/floatingMenuItem2"
+            android:visibility="gone"
+            android:background="@mipmap/custlist_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+
+
+
+        <ImageView
+        android:visibility="gone"
+        android:id="@+id/floatingMenuItem1"
+        android:background="@mipmap/custlist_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:id="@+id/notification_list_sort"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/filter"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

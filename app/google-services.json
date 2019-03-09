@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "579716384252",
+    "firebase_url": "https://todolistf.firebaseio.com",
+    "project_id": "todolistf",
+    "storage_bucket": "todolistf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579716384252:android:f33bbe17e4f029e6",
+        "android_client_info": {
+          "package_name": "com.example.faiz.carwash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579716384252-0p1alm49hro4bba7j0r45ti8ng0kc60q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faiz.carwash",
+            "certificate_hash": "17a7fea7b5c236d08ab99c4744fd78ac2b768c83"
+          }
+        },
+        {
+          "client_id": "579716384252-9dv8bo8iomtembt8fo4arulfn1i9shq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhDe9_IixBRzCzyKO27oovFAikCyYWkP4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579716384252-9dv8bo8iomtembt8fo4arulfn1i9shq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
